@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동양산업개발 | 프리미엄 상가 분양</title>
+    <meta name="description" content="동양산업개발 - 프리미엄 병의원 상가 및 일반 상가 분양/임대. 등촌 동양하우징, 화곡 동양하우징, 성산 SJ라벨라.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 상단 고정 네비게이션 -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo" id="logoLink">
+                <img src="images/logo_horizontal_wt.png" alt="동양산업개발 로고" class="logo-img">
+            </a>
+            <div class="nav-tabs" id="navTabs">
+                <button class="nav-tab active" data-location="sjlabella">
+                    <span class="tab-label">SJ라벨라</span>
+                </button>
+                <button class="nav-tab" data-location="dh647">
+                    <span class="tab-label">DH647 더마곡테라스</span>
+                </button>
+                <button class="nav-tab" data-location="dongyang">
+                    <span class="tab-label">동양하우징</span>
+                </button>
+            </div>
+            <a href="tel:02-2695-8330" class="nav-phone">
+                <span class="phone-icon">📞</span>
+                <span class="phone-text">02-2695-8330</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="nav-tab active" data-location="sjlabella">SJ라벨라</button>
+            <button class="nav-tab" data-location="dh647">DH647 더마곡테라스</button>
+            <button class="nav-tab" data-location="dongyang">동양하우징</button>
+            <a href="tel:02-2695-8330" class="mobile-phone">📞 02-2695-8330</a>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero" id="heroSection">
+        <div class="hero-bg" id="heroBg">
+            <img src="images/hero-hwagok.png" alt="동양산업개발" class="hero-img active">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" id="heroContent">
+            <div class="hero-badge" id="heroBadge">병의원·상가</div>
+            <h1 class="hero-title" id="heroTitle">SJ라벨라</h1>
+            <p class="hero-subtitle" id="heroSubtitle">프리미엄 복합 의료상가</p>
+            <a href="#properties" class="hero-cta">
+                매물 보기 <span class="cta-arrow">↓</span>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 특장점 섹션 -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WHY CHOOSE US</span>
+                <h2 class="section-title">투자 핵심 포인트</h2>
+            </div>
+            <div class="features-grid" id="featuresGrid">
+                <!-- JS에서 현장별로 동적 렌더링 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 매물 카드 섹션 -->
+    <section class="properties" id="properties">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">AVAILABLE UNITS</span>
+                <h2 class="section-title">분양/임대 가능 매물</h2>
+                <p class="section-desc" id="propertyDesc">현재 계약 가능한 매물을 확인하세요</p>
+            </div>
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- JS에서 현장별로 동적 렌더링 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 시각자료 갤러리 -->
+
+
+
+    <!-- 입지 & 지도 -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="location-split">
+                <div class="location-info">
+                    <div class="section-header" style="text-align:left">
+                        <span class="section-tag">LOCATION</span>
+                        <h2 class="section-title">입지 안내</h2>
+                    </div>
+                    <div class="location-address" id="locationAddress">
+                        <div class="address-text">
+                            <span class="address-icon">📍</span>
+                            <span id="addressText">서울시 강서구 등촌로 65</span>
+                        </div>
+                    </div>
+                    <div class="location-amenities" id="locationAmenities">
+                        <!-- JS에서 렌더링 -->
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div class="map-wrapper" id="mapWrapper">
+                        <iframe id="mapFrame" 
+                            src="https://map.kakao.com/link/map/등촌동양하우징,37.5665,126.8500" 
+                            width="100%" height="100%" 
+                            style="border:0" allowfullscreen loading="lazy">
+                        </iframe>
+                        <div class="map-overlay-card" id="mapCard">
+                            <strong id="mapCardTitle">등촌 동양하우징</strong>
+                            <span id="mapCardAddr">서울시 강서구 등촌로 65</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의하기 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">문의하기</h2>
+                <p class="section-desc">관심 있는 매물에 대해 문의해주세요</p>
+            </div>
+            <div class="contact-split">
+                <div class="contact-channels">
+                    <a href="tel:02-2695-8330" class="contact-card contact-card--phone">
+                        <div class="contact-card-icon">📞</div>
+                        <div class="contact-card-info">
+                            <strong>전화 문의</strong>
+                            <span>02-2695-8330</span>
+                            <small>평일 09:00~18:00</small>
+                        </div>
+                    </a>
+                    <a href="tel:02-2698-9200" class="contact-card contact-card--office">
+                        <div class="contact-card-icon">🏢</div>
+                        <div class="contact-card-info">
+                            <strong>시행·시공 문의</strong>
+                            <span>02-2698-9200</span>
+                            <small>본사 직통</small>
+                        </div>
+                    </a>
+                </div>
+                <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" placeholder="홍길동" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" placeholder="010-1234-5678" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="interestLocation">관심 현장</label>
+                            <select id="interestLocation">
+                                <option value="등촌 동양하우징">등촌 동양하우징</option>
+                                <option value="화곡 동양하우징">화곡 동양하우징</option>
+                                <option value="화곡 SJ라벨라">화곡 SJ라벨라</option>
+                                <option value="성산 SJ라벨라">성산 SJ라벨라</option>
+                                <option value="DH647 더마곡테라스">DH647 더마곡테라스</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interestType">관심 유형</label>
+                            <select id="interestType">
+                                <option value="분양">분양</option>
+                                <option value="임대">임대</option>
+                                <option value="투자상담">투자 상담</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" rows="4" placeholder="궁금하신 사항을 자유롭게 적어주세요"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img src="images/logo_horizontal_wt.png" alt="동양산업개발 로고" class="logo-img" style="opacity: 0.5;">
+                </div>
+                <div class="footer-info">
+                    <p>(주) 동양산업개발 | 대표 고순길 | 사업자등록번호 : 109-86-32327</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 350 SJ 라벨라 201호</p>
+                    <p>시행·시공 Tel : 02-2698-9200 | 분양 Tel : 02-2695-8330</p>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2026 Dongyang Development. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 라이트박스 모달 -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">‹</button>
+        <button class="lightbox-next" id="lightboxNext">›</button>
+        <img class="lightbox-img" id="lightboxImg" alt="갤러리 이미지">
+    </div>
+
+    <!-- 매물 상세 모달 -->
+    <div class="property-detail-modal" id="propertyDetailModal">
+        <div class="pdm-header">
+            <button class="pdm-back" id="pdmBack" aria-label="뒤로가기">
+                <span>←</span> <span>목록으로</span>
+            </button>
+            <a href="tel:02-2695-8330" class="pdm-phone-btn">
+                📞 전화문의
+            </a>
+        </div>
+        <div class="pdm-content" id="pdmContent">
+            <!-- JS에서 동적 렌더링 -->
+        </div>
+    </div>
+
+    <!-- 문의 완료 토스트 -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✅</span>
+        <span class="toast-msg">문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
