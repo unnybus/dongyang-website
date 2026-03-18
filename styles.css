@@ -1547,3 +1547,68 @@ section {
     .pdm-gallery { grid-template-columns: 1fr; }
     .pdm-cta { flex-direction: column; }
 }
+
+/* --- Mobile Bottom Bar --- */
+.mobile-bottom-bar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        z-index: 9999;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    }
+
+    .mobile-bottom-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 16px 0;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-bottom-btn.inquiry-btn {
+        background: var(--primary);
+        color: white;
+    }
+
+    .mobile-bottom-btn.call-btn {
+        background: #1a1a2e;
+        color: white;
+    }
+
+    .mobile-bottom-btn:active {
+        opacity: 0.85;
+    }
+
+    .bottom-btn-icon {
+        font-size: 18px;
+    }
+
+    /* Toast - show above bottom bar on mobile */
+    .toast.show {
+        bottom: 80px;
+    }
+
+    /* Add bottom padding to body so content isn't hidden behind the bar */
+    body {
+        padding-bottom: 60px;
+    }
+
+    /* Hide desktop phone in nav */
+    .nav-phone {
+        display: none;
+    }
+}

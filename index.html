@@ -36,12 +36,10 @@
                 <span></span><span></span><span></span>
             </button>
         </div>
-        <!-- 모바일 메뉴 -->
         <div class="mobile-menu" id="mobileMenu">
             <button class="nav-tab active" data-location="sjlabella">SJ라벨라</button>
             <button class="nav-tab" data-location="dh647">DH647 더마곡테라스</button>
             <button class="nav-tab" data-location="dongyang">동양하우징</button>
-            <a href="tel:02-2695-8330" class="mobile-phone">📞 02-2695-8330</a>
         </div>
     </nav>
 
@@ -235,6 +233,18 @@
         <div class="pdm-content" id="pdmContent">
             <!-- JS에서 동적 렌더링 -->
         </div>
+    </div>
+
+    <!-- 모바일 하단 고정 바 -->
+    <div class="mobile-bottom-bar">
+        <a href="#contact" class="mobile-bottom-btn inquiry-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;">
+            <span class="bottom-btn-icon">✉️</span>
+            <span>문의하기</span>
+        </a>
+        <a href="tel:02-2695-8330" class="mobile-bottom-btn call-btn">
+            <span class="bottom-btn-icon">📞</span>
+            <span>전화문의</span>
+        </a>
     </div>
 
     <!-- 문의 완료 토스트 -->
