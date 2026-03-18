@@ -116,11 +116,7 @@
                 </div>
                 <div class="location-map">
                     <div class="map-wrapper" id="mapWrapper">
-                        <iframe id="mapFrame" 
-                            src="https://map.kakao.com/link/map/등촌동양하우징,37.5665,126.8500" 
-                            width="100%" height="100%" 
-                            style="border:0" allowfullscreen loading="lazy">
-                        </iframe>
+                        <div id="kakaoMap" style="width:100%;height:100%;"></div>
                         <div class="map-overlay-card" id="mapCard">
                             <strong id="mapCardTitle">등촌 동양하우징</strong>
                             <span id="mapCardAddr">서울시 강서구 등촌로 65</span>
@@ -247,6 +243,7 @@
         <span class="toast-msg">문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.</span>
     </div>
 
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a505e57706c6068015975f63fcd9bea9"></script>
     <script src="app.js"></script>
 </body>
 </html>

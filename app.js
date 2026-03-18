@@ -227,9 +227,8 @@ function renderLocation(loc) {
     document.getElementById('mapCardAddr').textContent = sub.address;
     renderAmenities(sub.amenities);
 
-    // Map
-    const mapFrame = document.getElementById('mapFrame');
-    mapFrame.src = `https://map.kakao.com/link/map/${encodeURIComponent(sub.name)},${sub.mapCoord.lat},${sub.mapCoord.lng}`;
+    // Map - Kakao Maps JS API
+    initKakaoMap(sub.mapCoord.lat, sub.mapCoord.lng, sub.name);
 
     // Sub-location tabs
     renderSubLocationTabs(brand, loc);
@@ -375,6 +374,64 @@ function renderAmenities(amenities) {
 }
 
 // --- Scroll Effects ---
+// --- Kakao Map ---
+let kakaoMapInstance = null;
+
+function initKakaoMap(lat, lng, title) {
+    const container = document.getElementById('kakaoMap');
+    if (!container) return;
+
+    const position = new kakao.maps.LatLng(lat, lng);
+
+    if (kakaoMapInstance) {
+        // Re-center existing map
+        kakaoMapInstance.setCenter(position);
+        // Clear old markers/overlays
+        kakaoMapInstance = null;
+    }
+
+    const options = {
+        center: position,
+        level: 3
+    };
+
+    kakaoMapInstance = new kakao.maps.Map(container, options);
+
+    // Marker
+    const marker = new kakao.maps.Marker({
+        position: position,
+        map: kakaoMapInstance
+    });
+
+    // Custom overlay with property name
+    const overlayContent = `
+        <div style="
+            padding: 8px 16px;
+            background: #1a1a2e;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            white-space: nowrap;
+            transform: translateY(-8px);
+        ">${title}</div>
+    `;
+
+    const overlay = new kakao.maps.CustomOverlay({
+        content: overlayContent,
+        position: position,
+        yAnchor: 2.2,
+        map: kakaoMapInstance
+    });
+
+    // Add map controls
+    kakaoMapInstance.addControl(
+        new kakao.maps.ZoomControl(),
+        kakao.maps.ControlPosition.RIGHT
+    );
+}
+
 function initScrollEffects() {
     window.addEventListener('scroll', () => {
         const navbar = document.getElementById('navbar');
