@@ -11,7 +11,7 @@ const LOCATIONS = {
         subLocations: [
             {
                 id: 'sj-sungsan', name: '성산 SJ라벨라', address: '서울시 마포구 성산동 591-3',
-                mapCoord: { lat: 37.564537, lng: 126.899618 }, heroImg: 'images/hero-sungsan.png',
+                mapCoord: { lat: 37.5649778, lng: 126.9025543 }, heroImg: 'images/hero-sungsan.png',
                 features: [
                     { icon: '🏥', title: '검증된 신규개원 메디컬빌딩', desc: '정형외과,치과,내과,이비인후과\n피부과, 약국등 운영중\n한의원 산부인과 안과 개원 안내' },
                     { icon: '🚇', title: '초역세권입지', desc: '마포구청역 1번출구 바로앞\n대중교통 편의성 최상' },
@@ -35,7 +35,7 @@ const LOCATIONS = {
             },
             {
                 id: 'sj-hwagok', name: '화곡 SJ라벨라', address: '서울시 강서구 화곡로 350',
-                mapCoord: { lat: 37.558392, lng: 126.845354 }, heroImg: 'images/hero-hwagok.png',
+                mapCoord: { lat: 37.5549477, lng: 126.8523571 }, heroImg: 'images/hero-hwagok.png',
                 features: [
                     { icon: '📍', title: '핵심 상권', desc: '강서구청 사거리 중심상권\n유동인구 최대밀집지역' },
                     { icon: '🏗️', title: '시행사 직접분양', desc: '중간 마진 없는 합리적 가격\n동양산업개발 직접 시공' },
@@ -66,7 +66,7 @@ const LOCATIONS = {
         subLocations: [
             {
                 id: 'dh647-main', name: 'DH647 더마곡테라스', address: '서울시 강서구 내발산동 647',
-                mapCoord: { lat: 37.557921, lng: 126.840540 }, heroImg: 'images/hero-dh647.png',
+                mapCoord: { lat: 37.5579212, lng: 126.8405402 }, heroImg: 'images/hero-dh647.png',
                 features: [
                     { icon: '☕', title: '프리미엄 테넌트', desc: '수협 스타벅스 노모어피자 등\n안정적 임대수익 보장' },
                     { icon: '🏥', title: '대형평수 피부과', desc: '라엘의원 등 의료업종\n복합 시너지 효과' },
@@ -96,7 +96,7 @@ const LOCATIONS = {
         subLocations: [
             {
                 id: 'dy-hwagok', name: '화곡 동양하우징', address: '서울시 강서구 화곡동 899-4',
-                mapCoord: { lat: 37.530021, lng: 126.846802 }, heroImg: 'images/hero-eunchon_1.jpg',
+                mapCoord: { lat: 37.5300206, lng: 126.8468022 }, heroImg: 'images/hero-eunchon_1.jpg',
                 features: [
                     { icon: '📍', title: '핵심 상권', desc: '화곡역 인근 중심상권\n유동인구 최대 밀집' },
                     { icon: '🚗', title: '편리한 접근성', desc: '대로변 높은 가시성\n넉넉한 주차공간' },
@@ -117,7 +117,7 @@ const LOCATIONS = {
             },
             {
                 id: 'dy-eunchon', name: '등촌 동양하우징', address: '서울시 강서구 등촌로 65',
-                mapCoord: { lat: 37.535825, lng: 126.863055 }, heroImg: 'images/hero-eunchon_2.png',
+                mapCoord: { lat: 37.5357338, lng: 126.8631741 }, heroImg: 'images/hero-eunchon_2.png',
                 features: [
                     { icon: '🚇', title: '역세권 입지', desc: '지하철 도보 5분\n접근성 최상' },
                     { icon: '🏥', title: '병의원 특화설계', desc: '의료시설 인허가 용이\n전용 주차·환기' },
