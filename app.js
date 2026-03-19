@@ -119,13 +119,13 @@ const LOCATIONS = {
                 id: 'dy-eunchon', name: '등촌 동양하우징', address: '서울시 강서구 등촌로 65',
                 mapCoord: { lat: 37.5357338, lng: 126.8631741 }, heroImg: 'images/hero-eunchon_2.png',
                 features: [
-                    { icon: '🚇', title: '등촌역 인근', desc: '9호선 등촌역 인근\n대중교통 편리' },
+                    { icon: '🛣️', title: '대로변 입지', desc: '대로변 높은 가시성\n접근성 최상' },
                     { icon: '🏥', title: '병의원 특화설계', desc: '의료시설 인허가 용이\n전용 주차·환기' },
                     { icon: '🏗️', title: '시행사 직접분양', desc: '합리적 가격\n동양산업개발 시공' },
                     { icon: '👥', title: '풍부한 배후수요', desc: '등촌동 주거밀집\n유동인구 핵심 상권' },
                 ],
                 amenities: [
-                    { icon: '🚇', name: '등촌역', detail: '9호선 등촌역 인근' },
+                    { icon: '🚌', name: '버스 교통', detail: '대로변 버스정류장 인접' },
                     { icon: '🏫', name: '학교', detail: '등촌초, 영일고 인접' },
                     { icon: '🏪', name: '상업시설', detail: '등촌시장, 이마트 도보권' },
                     { icon: '🏥', name: '종합병원', detail: '이화여대목동병원 인근' },
