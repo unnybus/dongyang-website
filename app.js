@@ -11,7 +11,7 @@ const LOCATIONS = {
         subLocations: [
             {
                 id: 'sj-sungsan', name: '성산 SJ라벨라', address: '서울시 마포구 성산동 591-3',
-                mapCoord: { lat: 37.56387, lng: 126.90192 }, heroImg: 'images/hero-sungsan.png',
+                mapCoord: { lat: 37.5649807, lng: 126.9025662 }, heroImg: 'images/hero-sungsan.png',
                 features: [
                     { icon: '🏥', title: '검증된 신규개원 메디컬빌딩', desc: '정형외과,치과,내과,이비인후과\n피부과, 약국등 운영중\n한의원 산부인과 안과 개원 안내' },
                     { icon: '🚇', title: '초역세권입지', desc: '마포구청역 1번출구 바로앞\n대중교통 편의성 최상' },
