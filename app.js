@@ -10,37 +10,13 @@ const LOCATIONS = {
         subtitle: '프리미엄 복합 의료상가',
         subLocations: [
             {
-                id: 'sj-hwagok', name: '화곡 SJ라벨라', address: '서울시 강서구 화곡로 350',
-                mapCoord: { lat: 37.5412, lng: 126.8395 }, heroImg: 'images/hero-hwagok.png',
-                features: [
-                    { icon: '📍', title: '핵심 상권', desc: '화곡역 인근 중심상권\n유동인구 최대 밀집 지역' },
-                    { icon: '🏗️', title: '시행사 직접분양', desc: '중간 마진 없는 합리적 가격\n동양산업개발 직접 시공' },
-                    { icon: '💰', title: '높은 임대수익', desc: '안정적 임대수익 보장\n권리금 상승 잠재력' },
-                    { icon: '🚗', title: '편리한 접근성', desc: '대로변 위치 높은 가시성\n넉넉한 주차공간 확보' },
-                ],
-                amenities: [
-                    { icon: '🚇', name: '화곡역', detail: '5호선 도보 7분' },
-                    { icon: '🏪', name: '상업시설', detail: '화곡중앙시장, 롯데마트' },
-                    { icon: '🏫', name: '학교', detail: '화곡초, 화곡중 인접' },
-                    { icon: '🏥', name: '의료시설', detail: '주변 병의원 다수' },
-                ],
-                properties: [
-                    { unit: 'B301호', building: '화곡 SJ라벨라', area: '전용 45.00㎡', type: 'commercial', status: 'occupied', use: '더 센트레(준비)', dealType: 'sale', description: '화곡 SJ라벨라 지하3층 상가. 더 센트레 입점 준비 중.', specs: [{ label: '호실', value: 'B301호' }, { label: '위치', value: '화곡 SJ라벨라' }, { label: '전용면적', value: '45.00㎡' }, { label: '현재업종', value: '더 센트레(준비)' }], price: '문의' },
-                    { unit: 'B201호', building: '화곡 SJ라벨라', area: '전용 50.00㎡', type: 'commercial', status: 'occupied', use: '피트니스', dealType: 'sale', description: '화곡 SJ라벨라 지하2층. 피트니스 센터 운영 중.', specs: [{ label: '호실', value: 'B201호' }, { label: '전용면적', value: '50.00㎡' }, { label: '현재업종', value: '피트니스' }], price: '문의' },
-                    { unit: 'B101호', building: '화곡 SJ라벨라', area: '전용 40.00㎡', type: 'commercial', status: 'occupied', use: '라벨라부동산', dealType: 'sale', description: '화곡 SJ라벨라 지하1층. 라벨라부동산 운영 중.', specs: [{ label: '호실', value: 'B101호' }, { label: '전용면적', value: '40.00㎡' }, { label: '현재업종', value: '라벨라부동산' }], price: '문의' },
-                    { unit: '202호', building: '화곡 SJ라벨라', area: '전용 35.00㎡', type: 'commercial', status: 'occupied', use: '사무실', dealType: 'sale', description: '화곡 SJ라벨라 2층. 사무실 사용 중.', specs: [{ label: '호실', value: '202호' }, { label: '전용면적', value: '35.00㎡' }, { label: '현재업종', value: '사무실' }], price: '문의' },
-                    { unit: '203·204·205호', building: '화곡 SJ라벨라', area: '전용 95.00㎡', type: 'medical', status: 'occupied', use: '병의원 / SJ골프', dealType: 'both', description: '화곡 SJ라벨라 2층 통합 호실. 병의원 및 SJ골프 운영 중.', specs: [{ label: '호실', value: '203·204·205호' }, { label: '전용면적', value: '95.00㎡ (통합)' }, { label: '현재업종', value: '병의원 / SJ골프' }], price: '문의' },
-                ],
-                gallery: [{ src: 'images/hero-hwagok.png', label: '화곡 SJ라벨라 외관', category: 'exterior' }]
-            },
-            {
                 id: 'sj-sungsan', name: '성산 SJ라벨라', address: '서울시 마포구 성산동 591-3',
                 mapCoord: { lat: 37.5671, lng: 126.9133 }, heroImg: 'images/hero-sungsan.png',
                 features: [
-                    { icon: '🏥', title: '복합 의료타운', desc: '다층 의료상가 컨셉\n한의원·내과·산부인과 등' },
-                    { icon: '🚇', title: '더블 역세권', desc: '마포구 핵심 입지\n대중교통 편의성 최상' },
-                    { icon: '👨‍⚕️', title: '의료 특화 설계', desc: '의료시설 최적화 설계\n환자 동선 고려 구조' },
-                    { icon: '📈', title: '안정적 수익', desc: '의료 장기계약 특성\n공실 리스크 최소화' },
+                    { icon: '🏥', title: '검증된 신규개원 메디컬빌딩', desc: '정형외과,치과,내과,이비인후과\n피부과, 약국등 운영중\n한의원 산부인과 안과 개원 안내' },
+                    { icon: '🚇', title: '초역세권입지', desc: '마포구청역 1번출구 바로앞\n대중교통 편의성 최상' },
+                    { icon: '☕', title: '1층 스타벅스 입점', desc: '스타벅스 입점으로 건물가치 상승\n항아리상권 풍부한 배후수요' },
+                    { icon: '🏗️', title: '시행사 직영', desc: '시행사 직영 임대 및 건물관리\n개원시 지원금 및 렌트프리 협의가능' },
                 ],
                 amenities: [
                     { icon: '🚇', name: '지하철', detail: '6호선·월드컵경기장역 인근' },
@@ -49,13 +25,37 @@ const LOCATIONS = {
                     { icon: '🌳', name: '공원', detail: '월드컵공원, 하늘공원 인근' },
                 ],
                 properties: [
-                    { unit: '2층', building: '성산 SJ라벨라', area: '전용 59.50㎡', type: 'medical', status: 'vacant', use: '한의원', dealType: 'both', description: 'SJ라벨라 2층. 복합 의료타운 시너지. 더블 역세권 접근성.', specs: [{ label: '호실', value: '2층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '59.50㎡ (약 18평)' }, { label: '용도', value: '한의원' }, { label: '상태', value: '공실' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의' },
-                    { unit: '6층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: 'vacant', use: '내과', dealType: 'both', description: 'SJ라벨라 6층. 62.81㎡. 진찰실·처치실·검사실 구성 가능.', specs: [{ label: '호실', value: '6층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '내과' }, { label: '상태', value: '공실' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의' },
-                    { unit: '7층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: 'vacant', use: '산부인과', dealType: 'both', description: 'SJ라벨라 7층. 프라이버시 보장 독립층.', specs: [{ label: '호실', value: '7층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '산부인과' }, { label: '상태', value: '공실' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의' },
-                    { unit: '8층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: 'vacant', use: '안과', dealType: 'both', description: 'SJ라벨라 8층. 탁 트인 조망. 정밀장비 전용 설비.', specs: [{ label: '호실', value: '8층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '안과' }, { label: '상태', value: '공실' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의' },
-                    { unit: '10층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: 'vacant', use: '병의원', dealType: 'both', description: 'SJ라벨라 최고층. 프리미엄 입지. 파노라마 전망.', specs: [{ label: '호실', value: '10층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '병의원' }, { label: '상태', value: '공실' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의' },
+                    { unit: '2층', building: '성산 SJ라벨라', area: '전용 59.50㎡', type: 'medical', status: '', use: '한의원, 안과, 산부인과등', dealType: 'lease', tags: ['프렌차이즈'], description: 'SJ라벨라 2층. 복합 의료타운 시너지. 더블 역세권 접근성.', specs: [{ label: '호실', value: '2층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '59.50㎡ (약 18평)' }, { label: '용도', value: '한의원, 안과, 산부인과등' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의', gallery: [{src: `images/properties/sjlabella-sungsan/2F/img2.png`, label: '평면도', category: 'floorplan'}] },
+                    { unit: '6층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: '', use: '한의원, 안과, 산부인과등', dealType: 'lease', description: 'SJ라벨라 6층. 62.81㎡. 진찰실·처치실·검사실 구성 가능.', specs: [{ label: '호실', value: '6층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '한의원, 안과, 산부인과등' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의', gallery: [{src: `images/properties/sjlabella-sungsan/6F/img2.png`, label: '평면도', category: 'floorplan'}] },
+                    { unit: '7층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: '', use: '한의원, 안과, 산부인과등', dealType: 'lease', description: 'SJ라벨라 7층. 프라이버시 보장 독립층.', specs: [{ label: '호실', value: '7층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '한의원, 안과, 산부인과등' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의', gallery: [{src: `images/properties/sjlabella-sungsan/7F/img2.png`, label: '평면도', category: 'floorplan'}] },
+                    { unit: '8층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: '', use: '한의원, 안과, 산부인과등', dealType: 'lease', description: 'SJ라벨라 8층. 탁 트인 조망. 정밀장비 전용 설비.', specs: [{ label: '호실', value: '8층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '한의원, 안과, 산부인과등' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의', gallery: [{src: `images/properties/sjlabella-sungsan/8F/img2.png`, label: '평면도', category: 'floorplan'}] },
+                    { unit: '9층', building: '성산 SJ라벨라', area: '전용 62.81㎡', type: 'medical', status: '', use: '한의원, 안과, 산부인과등', dealType: 'lease', description: 'SJ라벨라 최고층. 프리미엄 입지. 파노라마 전망.', specs: [{ label: '호실', value: '9층' }, { label: '건물', value: '성산 SJ라벨라' }, { label: '전용면적', value: '62.81㎡ (약 19평)' }, { label: '용도', value: '한의원, 안과, 산부인과등' }, { label: '입주가능일', value: '즉시 입주' }], price: '문의', gallery: [{src: `images/properties/sjlabella-sungsan/9F/img2.png`, label: '평면도', category: 'floorplan'}] },
                 ],
                 gallery: [{ src: 'images/hero-sungsan.png', label: '성산 SJ라벨라 외관', category: 'exterior' }]
+            },
+            {
+                id: 'sj-hwagok', name: '화곡 SJ라벨라', address: '서울시 강서구 화곡로 350',
+                mapCoord: { lat: 37.5412, lng: 126.8395 }, heroImg: 'images/hero-hwagok.png',
+                features: [
+                    { icon: '📍', title: '핵심 상권', desc: '강서구청 사거리 중심상권\n유동인구 최대밀집지역' },
+                    { icon: '🏗️', title: '시행사 직접분양', desc: '중간 마진 없는 합리적 가격\n동양산업개발 직접 시공' },
+                    { icon: '💰', title: '높은 임대수익', desc: '안정적 임대수익 보장\n권리금 상승 잠재력' },
+                    { icon: '💎', title: '수익율 보장상가', desc: '임대인 운영중 상가로 분양시\n분양가 조정 가능' },
+                ],
+                amenities: [
+                    { icon: '🚇', name: '화곡역', detail: '5호선 도보 7분' },
+                    { icon: '🏪', name: '상업시설', detail: '화곡중앙시장, 롯데마트' },
+                    { icon: '🏫', name: '학교', detail: '화곡초, 화곡중 인접' },
+                    { icon: '🏥', name: '의료시설', detail: '주변 병의원 다수' },
+                ],
+                properties: [
+                    { unit: 'B301호', building: '화곡 SJ라벨라', area: '전용 45.00㎡', type: 'commercial', status: 'occupied', use: '더 센트레(줌바)', dealType: 'sale', description: '화곡 SJ라벨라 지하3층 상가. 더 센트레 줌바 운영 중.', specs: [{ label: '호실', value: 'B301호' }, { label: '위치', value: '화곡 SJ라벨라' }, { label: '전용면적', value: '45.00㎡' }, { label: '현재업종', value: '더 센트레(줌바)' }], price: '문의', gallery: [1,2,3,4].map(i => ({src: `images/properties/sjlabella-hwagok/B301/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: 'B201호', building: '화곡 SJ라벨라', area: '전용 50.00㎡', type: 'commercial', status: 'occupied', use: '피트니스', dealType: 'sale', description: '화곡 SJ라벨라 지하2층. 피트니스 센터 운영 중.', specs: [{ label: '호실', value: 'B201호' }, { label: '전용면적', value: '50.00㎡' }, { label: '현재업종', value: '피트니스' }], price: '문의', gallery: [1,2,3].map(i => ({src: `images/properties/sjlabella-hwagok/B201/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: 'B101호', building: '화곡 SJ라벨라', area: '전용 40.00㎡', type: 'commercial', status: 'occupied', use: '라벨라부동산', dealType: 'sale', description: '화곡 SJ라벨라 지하1층. 라벨라부동산 운영 중.', specs: [{ label: '호실', value: 'B101호' }, { label: '전용면적', value: '40.00㎡' }, { label: '현재업종', value: '라벨라부동산' }], price: '문의', gallery: [1,2,3,4].map(i => ({src: `images/properties/sjlabella-hwagok/B101/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: '202호', building: '화곡 SJ라벨라', area: '전용 35.00㎡', type: 'commercial', status: 'occupied', use: '사무실', dealType: 'sale', description: '화곡 SJ라벨라 2층. 사무실 사용 중.', specs: [{ label: '호실', value: '202호' }, { label: '전용면적', value: '35.00㎡' }, { label: '현재업종', value: '사무실' }], price: '문의', gallery: [{src: `images/properties/sjlabella-hwagok/202/img1.png`, label: '내부 인테리어', category: 'interior'}] },
+                    { unit: '203·204·205호', building: '화곡 SJ라벨라', area: '전용 95.00㎡', type: 'commercial', status: 'occupied', use: 'SJ골프', dealType: 'both', description: '화곡 SJ라벨라 2층 통합 호실. SJ골프 운영 중.', specs: [{ label: '호실', value: '203·204·205호' }, { label: '전용면적', value: '95.00㎡ (통합)' }, { label: '현재업종', value: 'SJ골프' }], price: '문의', gallery: [1,2].map(i => ({src: `images/properties/sjlabella-hwagok/203-205/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
+                ],
+                gallery: [{ src: 'images/hero-hwagok.png', label: '화곡 SJ라벨라 외관', category: 'exterior' }]
             }
         ]
     },
@@ -68,8 +68,8 @@ const LOCATIONS = {
                 id: 'dh647-main', name: 'DH647 더마곡테라스', address: '서울시 강서구 내발산동 647',
                 mapCoord: { lat: 37.5600, lng: 126.8370 }, heroImg: 'images/hero-dh647.png',
                 features: [
-                    { icon: '☕', title: '프리미엄 테넌트', desc: '스타벅스 등 우량 임차인\n안정적 임대수익 보장' },
-                    { icon: '🏥', title: '의료시설 입주', desc: '라엘의원 등 의료업종\n복합 시너지 효과' },
+                    { icon: '☕', title: '프리미엄 테넌트', desc: '수협 스타벅스 노모어피자 등\n안정적 임대수익 보장' },
+                    { icon: '🏥', title: '대형평수 피부과', desc: '라엘의원 등 의료업종\n복합 시너지 효과' },
                     { icon: '🌆', title: '마곡 핵심입지', desc: '마곡지구 개발 수혜\n미래 가치 상승' },
                     { icon: '🏗️', title: '시행사 직접분양', desc: '중간 마진 없는 가격\n동양산업개발 시공' },
                 ],
@@ -80,12 +80,10 @@ const LOCATIONS = {
                     { icon: '🌳', name: '서울식물원', detail: '도보권 인접' },
                 ],
                 properties: [
-                    { unit: '지하1층', building: 'DH647 더마곡테라스', area: '면적 문의', type: 'commercial', status: 'occupied', use: '휴메이크 헬스장', dealType: 'sale', description: 'DH647 지하1층. 휴메이크 헬스장 운영 중.', specs: [{ label: '호실', value: '지하1층' }, { label: '건물', value: 'DH647 더마곡테라스' }, { label: '현재업종', value: '휴메이크 헬스장' }], price: '문의' },
-                    { unit: '101호', building: 'DH647 더마곡테라스', area: '면적 문의', type: 'commercial', status: 'occupied', use: '스타벅스', dealType: 'sale', description: 'DH647 1층. 스타벅스 입점. 장기임대.', specs: [{ label: '호실', value: '101호' }, { label: '건물', value: 'DH647 더마곡테라스' }, { label: '현재업종', value: '스타벅스' }], price: '문의' },
-                    { unit: '102호', building: 'DH647 더마곡테라스', area: '면적 문의', type: 'commercial', status: 'occupied', use: '노모어피자', dealType: 'sale', description: 'DH647 1층. 노모어피자 발산점 운영 중.', specs: [{ label: '호실', value: '102호' }, { label: '건물', value: 'DH647 더마곡테라스' }, { label: '현재업종', value: '노모어피자 발산점' }], price: '문의' },
-                    { unit: '201·202·203호', building: 'DH647 더마곡테라스', area: '면적 문의', type: 'medical', status: 'occupied', use: '라엘의원', dealType: 'sale', description: 'DH647 2층 통합. 나원즈(라엘의원) 운영 중.', specs: [{ label: '호실', value: '201·202·203호' }, { label: '건물', value: 'DH647 더마곡테라스 2층' }, { label: '현재업종', value: '나원즈(라엘의원)' }], price: '문의' },
-                    { unit: '402호', building: 'DH647 더마곡테라스', area: '면적 문의', type: 'officetel', status: 'occupied', use: '전세', dealType: 'sale', description: 'DH647 4층 오피스텔. 전세 입주 중.', specs: [{ label: '호실', value: '402호' }, { label: '구분', value: 'O.T' }, { label: '현재', value: '전세' }], price: '문의' },
-                    { unit: '403호', building: 'DH647 더마곡테라스', area: '면적 문의', type: 'officetel', status: 'occupied', use: '전세', dealType: 'sale', description: 'DH647 4층 오피스텔. 전세 입주 중.', specs: [{ label: '호실', value: '403호' }, { label: '구분', value: 'O.T' }, { label: '현재', value: '전세' }], price: '문의' },
+                    { unit: '지하1층', building: 'DH647 더마곡테라스', area: '전용 271.05㎡ (약 82평)', type: 'commercial', status: 'occupied', use: '휴메이크 헬스장', dealType: 'sale', description: 'DH647 지하1층. 휴메이크 헬스장 운영 중.', specs: [{ label: '호실', value: '지하1층' }, { label: '건물', value: 'DH647 더마곡테라스' }, { label: '현재업종', value: '휴메이크 헬스장' }, { label: '전용면적', value: '271.05㎡ (81.99평)' }, { label: '계약면적', value: '1411.97㎡ (427.12평)' }], price: '문의', gallery: [1,2,3,4].map(i => ({src: `images/properties/dh647/B1/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: '101호', building: 'DH647 더마곡테라스', area: '전용 225.45㎡ (약 68평)', type: 'commercial', status: 'occupied', use: '스타벅스', dealType: 'sale', description: 'DH647 1층. 스타벅스 입점. 장기임대.', specs: [{ label: '호실', value: '101호' }, { label: '건물', value: 'DH647 더마곡테라스' }, { label: '현재업종', value: '스타벅스' }, { label: '전용면적', value: '225.45㎡ (68.20평)' }, { label: '계약면적', value: '363.75㎡ (110.03평)' }], price: '문의', gallery: [1,2].map(i => ({src: `images/properties/dh647/101/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: '102호', building: 'DH647 더마곡테라스', area: '전용 52.50㎡ (약 16평)', type: 'commercial', status: 'occupied', use: '노모어피자', dealType: 'sale', description: 'DH647 1층. 노모어피자 발산점 운영 중.', specs: [{ label: '호실', value: '102호' }, { label: '건물', value: 'DH647 더마곡테라스' }, { label: '현재업종', value: '노모어피자 발산점' }, { label: '전용면적', value: '52.50㎡ (15.88평)' }, { label: '계약면적', value: '84.71㎡ (25.62평)' }], price: '문의', gallery: [1,2,3].map(i => ({src: `images/properties/dh647/102/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: '201·202·203호', building: 'DH647 더마곡테라스', area: '전용 534.72㎡ (약 162평)', type: 'medical', status: 'occupied', use: '라엘의원', dealType: 'sale', description: 'DH647 2층 통합. 나원즈(라엘의원) 운영 중.', specs: [{ label: '호실', value: '201·202·203호' }, { label: '건물', value: 'DH647 더마곡테라스 2층' }, { label: '현재업종', value: '나원즈(라엘의원)' }, { label: '전용면적', value: '534.72㎡ (161.75평)' }, { label: '계약면적', value: '862.74㎡ (260.97평)' }], price: '문의', gallery: [1,2,3,4,5].map(i => ({src: `images/properties/dh647/201-203/img${i}.png`, label: '내부 인테리어', category: 'interior'})) },
                 ],
                 gallery: [{ src: 'images/hero-dh647.png', label: 'DH647 더마곡테라스 외관', category: 'exterior' }]
             }
@@ -98,7 +96,7 @@ const LOCATIONS = {
         subLocations: [
             {
                 id: 'dy-hwagok', name: '화곡 동양하우징', address: '서울시 강서구 화곡동 899-4',
-                mapCoord: { lat: 37.5412, lng: 126.8395 }, heroImg: 'images/hero-hwagok.png',
+                mapCoord: { lat: 37.5412, lng: 126.8395 }, heroImg: 'images/hero-eunchon_1.jpg',
                 features: [
                     { icon: '📍', title: '핵심 상권', desc: '화곡역 인근 중심상권\n유동인구 최대 밀집' },
                     { icon: '🚗', title: '편리한 접근성', desc: '대로변 높은 가시성\n넉넉한 주차공간' },
@@ -112,14 +110,14 @@ const LOCATIONS = {
                     { icon: '🏥', name: '의료시설', detail: '주변 병의원 다수' },
                 ],
                 properties: [
-                    { unit: 'B101호', building: '화곡 동양하우징', area: '전용 45.21㎡', type: 'commercial', status: 'vacant', use: '일반상가', dealType: 'both', description: '화곡 동양하우징 지하1층. 중심상권. 분양·임대 가능.', specs: [{ label: '호실', value: 'B101호' }, { label: '위치', value: '지하 1층' }, { label: '전용면적', value: '45.21㎡ (약 13.7평)' }, { label: '상태', value: '공실' }], price: '문의' },
-                    { unit: 'B201호', building: '화곡 동양하우징', area: '전용 52.89㎡', type: 'commercial', status: 'vacant', use: '일반상가', dealType: 'both', description: '화곡 동양하우징 2층. 넉넉한 면적. 분양·임대 가능.', specs: [{ label: '호실', value: 'B201호' }, { label: '위치', value: '2층' }, { label: '전용면적', value: '52.89㎡ (약 16평)' }, { label: '상태', value: '공실' }], price: '문의' },
+                    { unit: 'B101호', building: '화곡 동양하우징', area: '전용 45.21㎡', type: 'commercial', status: '', use: '일반상가', dealType: 'both', description: '화곡 동양하우징 지하1층. 중심상권. 분양·임대 가능.', specs: [{ label: '호실', value: 'B101호' }, { label: '위치', value: '지하 1층' }, { label: '전용면적', value: '45.21㎡ (약 13.7평)' }], price: '문의', gallery: [{src: 'images/properties/dongyang-eunchon/1dong/B101/img1.jpg', label: '내부 인테리어', category: 'interior'}] },
+                    { unit: 'B201호', building: '화곡 동양하우징', area: '전용 52.89㎡', type: 'commercial', status: '', use: '일반상가', dealType: 'both', description: '화곡 동양하우징 2층. 넉넉한 면적. 분양·임대 가능.', specs: [{ label: '호실', value: 'B201호' }, { label: '위치', value: '2층' }, { label: '전용면적', value: '52.89㎡ (약 16평)' }], price: '문의', gallery: [] },
                 ],
-                gallery: [{ src: 'images/hero-hwagok.png', label: '화곡 동양하우징 외관', category: 'exterior' }]
+                gallery: [{ src: 'images/hero-eunchon_1.jpg', label: '화곡 동양하우징 외관', category: 'exterior' }]
             },
             {
                 id: 'dy-eunchon', name: '등촌 동양하우징', address: '서울시 강서구 등촌로 65',
-                mapCoord: { lat: 37.5665, lng: 126.8500 }, heroImg: 'images/hero-eunchon.png',
+                mapCoord: { lat: 37.5665, lng: 126.8500 }, heroImg: 'images/hero-eunchon_2.png',
                 features: [
                     { icon: '🚇', title: '역세권 입지', desc: '지하철 도보 5분\n접근성 최상' },
                     { icon: '🏥', title: '병의원 특화설계', desc: '의료시설 인허가 용이\n전용 주차·환기' },
@@ -133,14 +131,14 @@ const LOCATIONS = {
                     { icon: '🏥', name: '종합병원', detail: '이화여대목동병원 인근' },
                 ],
                 properties: [
-                    { unit: '101·201호', building: '등촌 동양하우징 2동', area: '면적 문의', type: 'medical', status: 'occupied', use: '병의원/스터디카페', dealType: 'both', description: '등촌 2동. 병의원·지니24스터디카페 운영. 분양·임대 가능.', specs: [{ label: '호실', value: '101·201호' }, { label: '동', value: '2동' }, { label: '현재업종', value: '병의원/지니24' }], price: '문의' },
-                    { unit: 'B109호', building: '등촌 동양하우징 2동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '벤처디', dealType: 'sale', description: '등촌 2동 지하. 벤처디 운영.', specs: [{ label: '호실', value: 'B109호' }, { label: '동', value: '2동' }, { label: '현재업종', value: '벤처디(엔씨에)' }], price: '문의' },
-                    { unit: 'B106·B107·B202호', building: '등촌 동양하우징 1동', area: '전용 29.75~39.67㎡', type: 'medical', status: 'vacant', use: '병의원 / 공실', dealType: 'both', description: '등촌 1동. 병의원 특화. 공실 즉시 입주. 분양·임대 가능.', specs: [{ label: '호실', value: 'B106·B107·B202호' }, { label: '동', value: '1동' }, { label: '전용면적', value: '29.75~39.67㎡' }, { label: '상태', value: '공실' }], price: '문의' },
-                    { unit: 'B108호', building: '등촌 동양하우징 1동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '훈Gym', dealType: 'sale', description: '등촌 1동. 훈Gym 운영.', specs: [{ label: '호실', value: 'B108호' }, { label: '동', value: '1동' }, { label: '현재업종', value: '훈Gym' }], price: '문의' },
-                    { unit: 'B201호', building: '등촌 동양하우징 1동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '훈Gym', dealType: 'sale', description: '등촌 1동. 훈Gym 운영.', specs: [{ label: '호실', value: 'B201호' }, { label: '동', value: '1동' }, { label: '현재업종', value: '훈Gym' }], price: '문의' },
-                    { unit: 'B301호', building: '등촌 동양하우징 1동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '훈Gym', dealType: 'sale', description: '등촌 1동. 훈Gym 운영.', specs: [{ label: '호실', value: 'B301호' }, { label: '동', value: '1동' }, { label: '현재업종', value: '훈Gym' }], price: '문의' },
+                    { unit: '101·201호', building: '등촌 동양하우징 2동', area: '면적 문의', type: 'medical', status: 'occupied', use: '병의원/스터디카페', dealType: 'both', description: '등촌 2동. 병의원·지니24스터디카페 운영. 분양·임대 가능.', specs: [{ label: '호실', value: '101·201호' }, { label: '동', value: '2동' }, { label: '현재업종', value: '병의원/지니24' }], price: '문의', gallery: ['4.55.51','4.55.57','4.56.04'].map(t=>({src: `images/properties/dongyang-eunchon/2dong/101-201/in 2026-03-19 오후 ${t}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: 'B109호', building: '등촌 동양하우징 2동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '벤처디', dealType: 'sale', description: '등촌 2동 지하. 벤처디 운영.', specs: [{ label: '호실', value: 'B109호' }, { label: '동', value: '2동' }, { label: '현재업종', value: '벤처디(엔씨에)' }], price: '문의', gallery: ['4.57.06','4.57.11','4.57.17'].map(t=>({src: `images/properties/dongyang-eunchon/2dong/B109/in 2026-03-19 오후 ${t}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: 'B106·B107·B202호', building: '등촌 동양하우징 1동', area: '전용 29.75~39.67㎡', type: 'medical', status: '', use: '병의원 / 공실', dealType: 'both', description: '등촌 1동. 병의원 특화. 공실 즉시 입주. 분양·임대 가능.', specs: [{ label: '호실', value: 'B106·B107·B202호' }, { label: '동', value: '1동' }, { label: '전용면적', value: '29.75~39.67㎡' }], price: '문의', gallery: ['5.02.06','5.02.12','5.02.19'].map(t=>({src: `images/properties/dongyang-eunchon/2dong/B106_202/in 2026-03-19 오후 ${t}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: 'B108호', building: '등촌 동양하우징 1동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '혼Gym', dealType: 'sale', description: '등촌 1동. 혼Gym 운영.', specs: [{ label: '호실', value: 'B108호' }, { label: '동', value: '1동' }, { label: '현재업종', value: '혼Gym' }], price: '문의', gallery: ['5.00.49','5.00.55','5.01.02'].map(t=>({src: `images/properties/dongyang-eunchon/2dong/B108/in 2026-03-19 오후 ${t}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: 'B201호', building: '등촌 동양하우징 1동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '훈Gym', dealType: 'sale', description: '등촌 1동. 훈Gym 운영.', specs: [{ label: '호실', value: 'B201호' }, { label: '동', value: '1동' }, { label: '현재업종', value: '훈Gym' }], price: '문의', gallery: ['5.00.49','5.00.55','5.01.02'].map(t=>({src: `images/properties/dongyang-eunchon/2dong/B201/in 2026-03-19 오후 ${t}.png`, label: '내부 인테리어', category: 'interior'})) },
+                    { unit: 'B301호', building: '등촌 동양하우징 1동', area: '면적 문의', type: 'commercial', status: 'occupied', use: '훈Gym', dealType: 'sale', description: '등촌 1동. 훈Gym 운영.', specs: [{ label: '호실', value: 'B301호' }, { label: '동', value: '1동' }, { label: '현재업종', value: '훈Gym' }], price: '문의', gallery: ['5.00.49','5.00.55','5.01.02'].map(t=>({src: `images/properties/dongyang-eunchon/2dong/B301/in 2026-03-19 오후 ${t}.png`, label: '내부 인테리어', category: 'interior'})) },
                 ],
-                gallery: [{ src: 'images/hero-eunchon.png', label: '등촌 동양하우징 외관', category: 'exterior' }]
+                gallery: [{ src: 'images/hero-eunchon_2.png', label: '등촌 동양하우징 외관', category: 'exterior' }]
             }
         ]
     }
@@ -288,7 +286,7 @@ function renderFeatures(features) {
 function renderProperties(brand, locationKey) {
     const grid = document.getElementById('propertiesGrid');
     const allProperties = brand.subLocations.flatMap((sub, subIdx) =>
-        sub.properties.map((p, pIdx) => ({ ...p, subIdx, pIdx, subName: sub.name }))
+        sub.properties.map((p, pIdx) => ({ ...p, subIdx, pIdx, subName: sub.name, subHeroImg: sub.heroImg }))
     );
 
     document.getElementById('propertyDesc').textContent =
@@ -297,12 +295,12 @@ function renderProperties(brand, locationKey) {
     let currentSub = '';
     grid.innerHTML = allProperties.map(p => {
         const typeClass = p.type === 'medical' ? 'medical' : (p.type === 'officetel' ? 'officetel' : 'commercial');
-        const typeLabel = p.type === 'medical' ? '병의원' : (p.type === 'officetel' ? '오피스텔' : '상가');
+        const typeLabel = p.type === 'medical' ? '병의원 임대 희망' : (p.type === 'officetel' ? '오피스텔' : '상가');
         const unitIcon = p.type === 'medical' ? '🏥' : (p.type === 'officetel' ? '🏠' : '🏪');
         const floorDisplay = p.unit.replace(/[^0-9BF층]/g, '') || p.unit;
         const statusBadge = p.status === 'vacant'
             ? '<span class="badge badge--vacant">공실</span>'
-            : '<span class="badge badge--occupied">입주중</span>';
+            : (p.status === 'occupied' ? '<span class="badge badge--occupied">운영중</span>' : '');
 
         let subHeader = '';
         if (brand.subLocations.length > 1 && p.subName !== currentSub) {
@@ -316,12 +314,12 @@ function renderProperties(brand, locationKey) {
         return `
             ${subHeader}
             <div class="property-card anim-in" onclick="openPropertyDetail('${locationKey}', ${p.subIdx}, ${p.pIdx})" style="cursor:pointer">
-                <div class="property-card-visual">
-                    <span class="unit-icon">${unitIcon}</span>
-                    <span class="floor-number">${floorDisplay}</span>
+                <div class="property-card-visual" style="background: linear-gradient(to bottom, rgba(15,25,35,0.1), rgba(15,25,35,0.7)), url('${p.subHeroImg}') center/cover no-repeat;">
+                    <span class="floor-number" style="color: rgba(255,255,255,0.6);">${floorDisplay}</span>
                     <div class="property-badges">
                         ${statusBadge}
                         <span class="badge badge--${typeClass}">${typeLabel}</span>
+                        ${(p.tags || []).map(t => `<span class="badge badge--tag">${t}</span>`).join('')}
                     </div>
                 </div>
                 <div class="property-card-body">
@@ -330,7 +328,7 @@ function renderProperties(brand, locationKey) {
                     <div class="property-details">
                         <div class="property-detail">
                             <span class="property-detail-icon">📐</span>
-                            <span>${p.area}</span>
+                            <span>${(() => { const m = p.area.match(/([\d.]+)/); return m ? '전용 ' + Math.round(parseFloat(m[1]) / 3.3058) + '평' : p.area; })()}</span>
                         </div>
                         <div class="property-detail">
                             <span class="property-detail-icon">${unitIcon}</span>
@@ -604,12 +602,12 @@ function closePropertyDetail() {
 function renderPropertyDetail(p, brand, sub) {
     const content = document.getElementById('pdmContent');
     const typeClass = p.type === 'medical' ? 'medical' : (p.type === 'officetel' ? 'officetel' : 'commercial');
-    const typeLabel = p.type === 'medical' ? '병의원' : (p.type === 'officetel' ? '오피스텔' : '상가');
+    const typeLabel = p.type === 'medical' ? '병의원 임대 희망' : (p.type === 'officetel' ? '오피스텔' : '상가');
     const unitIcon = p.type === 'medical' ? '🏥' : (p.type === 'officetel' ? '🏠' : '🏪');
     const floorDisplay = p.unit.replace(/[^0-9BF층]/g, '') || p.unit;
     const statusBadge = p.status === 'vacant'
         ? '<span class="badge badge--vacant">공실</span>'
-        : '<span class="badge badge--occupied">입주중</span>';
+        : (p.status === 'occupied' ? '<span class="badge badge--occupied">운영중</span>' : '');
 
     const dealLabel = p.dealType === 'both' ? '분양·임대' : (p.dealType === 'lease' ? '임대' : '분양');
     const useLabel = p.status === 'vacant' ? '선호업종' : '현재업종';
@@ -621,32 +619,35 @@ function renderPropertyDetail(p, brand, sub) {
                 <span class="badge badge--${typeClass}">${typeLabel}</span>
                 <span class="badge badge--deal">${dealLabel}</span>
             </div>
-            <div class="pdm-hero-icon">${unitIcon}</div>
+            
             <div class="pdm-hero-unit">${p.unit}</div>
-            <div class="pdm-hero-building">${sub.name} · ${p.building}</div>
+            <div class="pdm-hero-building">${p.building}</div>
             <div class="pdm-floor-bg">${floorDisplay}</div>
         </div>
 
         <div class="pdm-body">
             <p class="pdm-description">${p.description || ''}</p>
 
-            ${sub.gallery && sub.gallery.length > 0 ? `
-            <div class="pdm-section-title">갤러리</div>
-            <div class="pdm-gallery-tabs">
-                <button class="pdm-gallery-tab active" data-category="all" onclick="filterPdmGallery('all')">전체</button>
-                <button class="pdm-gallery-tab" data-category="exterior" onclick="filterPdmGallery('exterior')">외부 전경</button>
-                <button class="pdm-gallery-tab" data-category="interior" onclick="filterPdmGallery('interior')">내부 인테리어</button>
-                <button class="pdm-gallery-tab" data-category="floor" onclick="filterPdmGallery('floor')">평면도</button>
-            </div>
-            <div class="pdm-gallery">
-                ${sub.gallery.map((img, idx) => `
-                    <div class="pdm-gallery-item" data-category="${img.category || 'exterior'}" onclick="lightboxImages = [${sub.gallery.map(g => "'" + g.src + "'").join(',')}]; openLightbox(${idx});">
-                        <img src="${img.src}" alt="${img.label}" loading="lazy">
-                        <span class="pdm-gallery-label">${img.label}</span>
-                    </div>
-                `).join('')}
-            </div>
-            ` : ''}
+            ${(p.gallery || sub.gallery) && (p.gallery || sub.gallery).length > 0 ? (() => {
+                const combinedGallery = p.gallery ? p.gallery.concat(sub.gallery || []) : sub.gallery;
+                return `
+                <div class="pdm-section-title">갤러리</div>
+                <div class="pdm-gallery-tabs">
+                    <button class="pdm-gallery-tab active" data-category="all" onclick="filterPdmGallery('all')">전체</button>
+                    <button class="pdm-gallery-tab" data-category="exterior" onclick="filterPdmGallery('exterior')">외부 전경</button>
+                    <button class="pdm-gallery-tab" data-category="interior" onclick="filterPdmGallery('interior')">내부 인테리어</button>
+                    <button class="pdm-gallery-tab" data-category="floor" onclick="filterPdmGallery('floor')">평면도</button>
+                </div>
+                <div class="pdm-gallery">
+                    ${combinedGallery.map((img, idx) => `
+                        <div class="pdm-gallery-item" data-category="${img.category || 'exterior'}" onclick="lightboxImages = [${combinedGallery.map(g => "'" + g.src + "'").join(',')}]; openLightbox(${idx});">
+                            <img src="${img.src}" alt="${img.label}" loading="lazy">
+                            <span class="pdm-gallery-label">${img.label}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                `;
+            })() : ''}
 
             <div class="pdm-specs">
                 <div class="pdm-section-title">상세 정보</div>
@@ -671,13 +672,8 @@ function renderPropertyDetail(p, brand, sub) {
                 </table>
             </div>
 
-            <div class="pdm-price-section">
-                <div class="pdm-price-label">분양가 / 임대가</div>
-                <div class="pdm-price-value">${p.price || '문의'}</div>
-            </div>
-
             <div class="pdm-cta">
-                <a href="tel:02-2695-8330" class="pdm-cta-btn pdm-cta-btn--primary">
+                <a href="tel:010-8901-8461" class="pdm-cta-btn pdm-cta-btn--primary">
                     📞 전화 문의하기
                 </a>
                 <button class="pdm-cta-btn pdm-cta-btn--secondary" onclick="closePropertyDetail(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
@@ -697,3 +693,57 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+/* =============================================
+   POPUP
+   ============================================= */
+(function() {
+    const overlay = document.getElementById('popupOverlay');
+    if (!overlay) return;
+
+    // 오늘 하루 안보기 체크
+    const hideUntil = localStorage.getItem('popupHideUntil');
+    if (hideUntil && new Date().getTime() < parseInt(hideUntil)) return;
+
+    // 팝업 열기
+    setTimeout(() => overlay.classList.add('active'), 500);
+
+    let currentSlide = 0;
+    const slides = overlay.querySelectorAll('.popup-slide');
+    const dots = overlay.querySelectorAll('.popup-dot');
+
+    function goToSlide(idx) {
+        slides.forEach(s => s.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+        currentSlide = idx;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    document.getElementById('popupPrev').addEventListener('click', () => {
+        goToSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+    });
+    document.getElementById('popupNext').addEventListener('click', () => {
+        goToSlide(currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.idx)));
+    });
+
+    function closePopup() {
+        const check = document.getElementById('popupTodayCheck');
+        if (check && check.checked) {
+            const midnight = new Date();
+            midnight.setHours(23, 59, 59, 999);
+            localStorage.setItem('popupHideUntil', midnight.getTime().toString());
+        }
+        overlay.classList.remove('active');
+    }
+
+    document.getElementById('popupClose').addEventListener('click', closePopup);
+    document.getElementById('popupCloseBtn').addEventListener('click', closePopup);
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closePopup();
+    });
+})();

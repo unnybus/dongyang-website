@@ -11,6 +11,48 @@
 </head>
 <body>
 
+    <!-- 팝업 -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-container">
+            <button class="popup-close" id="popupClose">&times;</button>
+            <div class="popup-slides" id="popupSlides">
+                <!-- 슬라이드 1 -->
+                <div class="popup-slide active">
+                    <div class="popup-slide-tag">SJ라벨라 성산동</div>
+                    <h2 class="popup-slide-title">🏥 병원임대 모집중</h2>
+                    <ul class="popup-slide-list">
+                        <li><span class="popup-check">✔</span> 개원지원금 <strong>1억이상</strong></li>
+                        <li><span class="popup-check">✔</span> 렌트프리 제공</li>
+                        <li><span class="popup-check">✔</span> 실평수 <strong>90평이상</strong></li>
+                        <li><span class="popup-check">✔</span> 배후수요확보</li>
+                    </ul>
+                    <a href="tel:010-8901-8461" class="popup-cta">📞 문의하기 010-8901-8461</a>
+                </div>
+                <!-- 슬라이드 2 -->
+                <div class="popup-slide">
+                    <div class="popup-slide-tag">동양하우징 상가</div>
+                    <h2 class="popup-slide-title">🏢 시행사 직접분양</h2>
+                    <ul class="popup-slide-list">
+                        <li><span class="popup-check">✔</span> 수익율보장 직접분양</li>
+                        <li><span class="popup-check">✔</span> 분양가 및 수수료 <strong>협의가능</strong></li>
+                        <li><span class="popup-check">✔</span> 상가 임대 운영중</li>
+                    </ul>
+                    <a href="tel:010-8901-8461" class="popup-cta">📞 문의하기 010-8901-8461</a>
+                </div>
+            </div>
+            <button class="popup-arrow popup-arrow--prev" id="popupPrev">‹</button>
+            <button class="popup-arrow popup-arrow--next" id="popupNext">›</button>
+            <div class="popup-dots" id="popupDots">
+                <span class="popup-dot active" data-idx="0"></span>
+                <span class="popup-dot" data-idx="1"></span>
+            </div>
+            <div class="popup-footer">
+                <label class="popup-today"><input type="checkbox" id="popupTodayCheck"> 오늘 하루 안보기</label>
+                <button class="popup-close-btn" id="popupCloseBtn">닫기</button>
+            </div>
+        </div>
+    </div>
+
     <!-- 상단 고정 네비게이션 -->
     <nav id="navbar" class="navbar">
         <div class="nav-inner">
@@ -28,9 +70,9 @@
                     <span class="tab-label">동양하우징</span>
                 </button>
             </div>
-            <a href="tel:02-2695-8330" class="nav-phone">
-                <span class="phone-icon">📞</span>
-                <span class="phone-text">02-2695-8330</span>
+            <a href="tel:010-8901-8461" class="nav-phone">
+                <svg class="phone-icon-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span class="phone-text">010-8901-8461</span>
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴">
                 <span></span><span></span><span></span>
@@ -46,7 +88,7 @@
     <!-- 히어로 섹션 -->
     <section class="hero" id="heroSection">
         <div class="hero-bg" id="heroBg">
-            <img src="images/hero-hwagok.png" alt="동양산업개발" class="hero-img active">
+            <img src="images/hero-sungsan.png" alt="동양산업개발" class="hero-img active">
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content" id="heroContent">
@@ -135,22 +177,32 @@
             </div>
             <div class="contact-split">
                 <div class="contact-channels">
-                    <a href="tel:02-2695-8330" class="contact-card contact-card--phone">
+                    <a href="tel:010-8901-8461" class="contact-card contact-card--phone">
                         <div class="contact-card-icon">📞</div>
                         <div class="contact-card-info">
-                            <strong>전화 문의</strong>
-                            <span>02-2695-8330</span>
+                            <strong>시행사 담당자</strong>
+                            <span>010-8901-8461</span>
                             <small>평일 09:00~18:00</small>
                         </div>
                     </a>
-                    <a href="tel:02-2698-9200" class="contact-card contact-card--office">
-                        <div class="contact-card-icon">🏢</div>
-                        <div class="contact-card-info">
-                            <strong>시행·시공 문의</strong>
-                            <span>02-2698-9200</span>
-                            <small>본사 직통</small>
-                        </div>
-                    </a>
+                    <div class="pdf-download-section">
+                        <h4 class="pdf-section-title">📄 PDF 자료 다운 받기</h4>
+                        <a href="pdf/★마포구 성산동 SJ라벨라 임대제안서_26.03.10.pdf" download class="pdf-download-item">
+                            <span class="pdf-icon">📋</span>
+                            <span class="pdf-name">SJ라벨라</span>
+                            <span class="pdf-badge">PDF</span>
+                        </a>
+                        <a href="pdf/★DH647 더 마곡 테라스 분양제안서_26.03.10.pdf" download class="pdf-download-item">
+                            <span class="pdf-icon">📋</span>
+                            <span class="pdf-name">DH647 더마곡테라스</span>
+                            <span class="pdf-badge">PDF</span>
+                        </a>
+                        <a href="pdf/★동양산업개발 회사보유분[상가,O.T]_26.03.10.pdf" download class="pdf-download-item">
+                            <span class="pdf-icon">📋</span>
+                            <span class="pdf-name">동양하우징</span>
+                            <span class="pdf-badge">PDF</span>
+                        </a>
+                    </div>
                 </div>
                 <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
                     <div class="form-row">
@@ -203,7 +255,7 @@
                 <div class="footer-info">
                     <p>(주) 동양산업개발 | 대표 고순길 | 사업자등록번호 : 109-86-32327</p>
                     <p>주소 : 서울특별시 강서구 화곡로 350 SJ 라벨라 201호</p>
-                    <p>시행·시공 Tel : 02-2698-9200 | 분양 Tel : 02-2695-8330</p>
+                    <p>시행·시공 Tel : 02-2698-9200 | 분양 Tel : 010-8901-8461</p>
                 </div>
                 <div class="footer-copy">
                     &copy; 2026 Dongyang Development. All rights reserved.
@@ -226,7 +278,7 @@
             <button class="pdm-back" id="pdmBack" aria-label="뒤로가기">
                 <span>←</span> <span>목록으로</span>
             </button>
-            <a href="tel:02-2695-8330" class="pdm-phone-btn">
+            <a href="tel:010-8901-8461" class="pdm-phone-btn">
                 📞 전화문의
             </a>
         </div>
@@ -240,7 +292,7 @@
         <a href="#contact" class="mobile-bottom-btn inquiry-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;">
             <span>문의하기</span>
         </a>
-        <a href="tel:02-2695-8330" class="mobile-bottom-btn call-btn">
+        <a href="tel:010-8901-8461" class="mobile-bottom-btn call-btn">
             <span>전화문의</span>
         </a>
     </div>
