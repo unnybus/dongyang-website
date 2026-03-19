@@ -19,9 +19,9 @@ const LOCATIONS = {
                     { icon: '🏗️', title: '시행사 직영', desc: '시행사 직영 임대 및 건물관리\n개원시 지원금 및 렌트프리 협의가능' },
                 ],
                 amenities: [
-                    { icon: '🚇', name: '지하철', detail: '6호선·월드컵경기장역 인근' },
-                    { icon: '⚽', name: '월드컵경기장', detail: '서울월드컵경기장 도보권' },
-                    { icon: '🏪', name: '상권', detail: '성산시장, 대형마트 인접' },
+                    { icon: '🚇', name: '마포구청역', detail: '6호선 도보 1분 초역세권' },
+                    { icon: '🏛️', name: '관공서', detail: '마포구청 인근' },
+                    { icon: '🏪', name: '상권', detail: '성산시장, 상암 상권 인접' },
                     { icon: '🌳', name: '공원', detail: '월드컵공원, 하늘공원 인근' },
                 ],
                 properties: [
@@ -43,9 +43,9 @@ const LOCATIONS = {
                     { icon: '💎', title: '수익율 보장상가', desc: '임대인 운영중 상가로 분양시\n분양가 조정 가능' },
                 ],
                 amenities: [
-                    { icon: '🚇', name: '화곡역', detail: '5호선 도보 7분' },
-                    { icon: '🏪', name: '상업시설', detail: '화곡중앙시장, 롯데마트' },
-                    { icon: '🏫', name: '학교', detail: '화곡초, 화곡중 인접' },
+                    { icon: '🚇', name: '화곡역', detail: '5호선 도보 6분' },
+                    { icon: '🏛️', name: '강서구청', detail: '강서구청 사거리 중심상권' },
+                    { icon: '🏪', name: '상업시설', detail: '화곡중앙시장, 은행밀집' },
                     { icon: '🏥', name: '의료시설', detail: '주변 병의원 다수' },
                 ],
                 properties: [
@@ -74,9 +74,9 @@ const LOCATIONS = {
                     { icon: '🏗️', title: '시행사 직접분양', desc: '중간 마진 없는 가격\n동양산업개발 시공' },
                 ],
                 amenities: [
-                    { icon: '🚇', name: '마곡역', detail: '9호선·공항철도 인근' },
+                    { icon: '🚇', name: '발산역', detail: '5호선 발산역 인근' },
                     { icon: '🏢', name: 'LG사이언스파크', detail: '마곡 R&D 클러스터' },
-                    { icon: '🛫', name: '김포공항', detail: '공항 접근성 우수' },
+                    { icon: '🛒', name: 'NC백화점', detail: 'NC백화점 강서점 인접' },
                     { icon: '🌳', name: '서울식물원', detail: '도보권 인접' },
                 ],
                 properties: [
@@ -98,14 +98,14 @@ const LOCATIONS = {
                 id: 'dy-hwagok', name: '화곡 동양하우징', address: '서울시 강서구 화곡동 899-4',
                 mapCoord: { lat: 37.5300206, lng: 126.8468022 }, heroImg: 'images/hero-eunchon_1.jpg',
                 features: [
-                    { icon: '📍', title: '핵심 상권', desc: '화곡역 인근 중심상권\n유동인구 최대 밀집' },
-                    { icon: '🚗', title: '편리한 접근성', desc: '대로변 높은 가시성\n넉넉한 주차공간' },
+                    { icon: '🚇', title: '더블역세권', desc: '까치산역 2·5호선\n도보 2분 초역세권' },
+                    { icon: '📍', title: '핵심 상권', desc: '까치산 사거리 중심상권\n유동인구 최대 밀집' },
                     { icon: '💰', title: '높은 임대수익', desc: '안정적 임대수익 보장\n권리금 상승 잠재력' },
                     { icon: '🏗️', title: '시행사 직접분양', desc: '합리적 가격\n동양산업개발 시공' },
                 ],
                 amenities: [
-                    { icon: '🚇', name: '화곡역', detail: '5호선 도보 7분' },
-                    { icon: '🏪', name: '상업시설', detail: '화곡중앙시장, 롯데마트' },
+                    { icon: '🚇', name: '까치산역', detail: '2·5호선 도보 2분 더블역세권' },
+                    { icon: '🏪', name: '상업시설', detail: '까치산시장, 편의시설 밀집' },
                     { icon: '🏫', name: '학교', detail: '화곡초, 화곡중 인접' },
                     { icon: '🏥', name: '의료시설', detail: '주변 병의원 다수' },
                 ],
@@ -119,15 +119,15 @@ const LOCATIONS = {
                 id: 'dy-eunchon', name: '등촌 동양하우징', address: '서울시 강서구 등촌로 65',
                 mapCoord: { lat: 37.5357338, lng: 126.8631741 }, heroImg: 'images/hero-eunchon_2.png',
                 features: [
-                    { icon: '🚇', title: '역세권 입지', desc: '지하철 도보 5분\n접근성 최상' },
+                    { icon: '🚇', title: '등촌역 인근', desc: '9호선 등촌역 인근\n대중교통 편리' },
                     { icon: '🏥', title: '병의원 특화설계', desc: '의료시설 인허가 용이\n전용 주차·환기' },
                     { icon: '🏗️', title: '시행사 직접분양', desc: '합리적 가격\n동양산업개발 시공' },
                     { icon: '👥', title: '풍부한 배후수요', desc: '등촌동 주거밀집\n유동인구 핵심 상권' },
                 ],
                 amenities: [
-                    { icon: '🚇', name: '지하철역', detail: '도보 5분 이내' },
-                    { icon: '🏫', name: '학교', detail: '등촌초, 등원중 인접' },
-                    { icon: '🏪', name: '대형마트', detail: '이마트·홈플러스 도보권' },
+                    { icon: '🚇', name: '등촌역', detail: '9호선 등촌역 인근' },
+                    { icon: '🏫', name: '학교', detail: '등촌초, 영일고 인접' },
+                    { icon: '🏪', name: '상업시설', detail: '등촌시장, 이마트 도보권' },
                     { icon: '🏥', name: '종합병원', detail: '이화여대목동병원 인근' },
                 ],
                 properties: [
