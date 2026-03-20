@@ -63,11 +63,7 @@ function renderLocation(loc) {
     // Hero
     document.querySelectorAll('.hero-img').forEach(img => {
         img.src = sub.heroImg;
-        if (sub.heroImg.includes('hero-sungsan')) {
-            img.style.objectPosition = 'center bottom';
-        } else {
-            img.style.objectPosition = '';
-        }
+        img.style.objectPosition = '';
         img.classList.add('active');
     });
     document.getElementById('heroBadge').textContent = brand.badge;
@@ -173,11 +169,12 @@ function renderProperties(brand, locationKey) {
 
         const dealLabel = p.dealType === 'both' ? '분양·임대' : (p.dealType === 'lease' ? '임대' : '분양');
         const useLabel = p.status === 'vacant' ? '선호업종' : '현재업종';
+        const displayImg = p.thumbImg ? p.thumbImg : p.subHeroImg;
 
         return `
             ${subHeader}
             <div class="property-card anim-in" onclick="openPropertyDetail('${locationKey}', ${p.subIdx}, ${p.pIdx})" style="cursor:pointer">
-                <div class="property-card-visual" style="background: linear-gradient(to bottom, rgba(15,25,35,0.1), rgba(15,25,35,0.7)), url('${p.subHeroImg}') center/cover no-repeat;">
+                <div class="property-card-visual" style="background: linear-gradient(to bottom, rgba(15,25,35,0.1), rgba(15,25,35,0.7)), url('${displayImg}') center/cover no-repeat;">
                     <span class="floor-number" style="color: rgba(255,255,255,0.6);">${floorDisplay}</span>
                     <div class="property-badges">
                         ${statusBadge}
