@@ -191,7 +191,7 @@ function renderProperties(brand, locationKey) {
                     <div class="property-details">
                         <div class="property-detail">
                             <span class="property-detail-icon">📐</span>
-                            <span>${(() => { const m = p.area.match(/([\d.]+)/); return m ? '전용 ' + Math.round(parseFloat(m[1]) / 3.3058) + '평' : p.area; })()}</span>
+                            <span>${p.area}</span>
                         </div>
                         <div class="property-detail">
                             <span class="property-detail-icon">${unitIcon}</span>
